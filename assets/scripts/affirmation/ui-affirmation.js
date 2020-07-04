@@ -21,6 +21,7 @@ const showAllAffirmationSuccess = (data) => {
 const showAllAffirmationFailure = (data) => {
   $('#message').text('?')
 }
+
 // const UpdateAffirmationSuccess = (data)
 module.exports = {
   createAffirmationSuccess,

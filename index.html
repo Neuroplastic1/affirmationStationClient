@@ -13,64 +13,76 @@
     </head>
     <body>
       <h2>Affirmation Station</h2>
-        <p id='notification'>Welcome Creator!</p>
+      <!-- <h4>Welcome Creator!</h4> -->
+        <p id='message'>Welcome Creator!</p>
         <section id="page-one">
         <h3>Sign Up</h3>
         <form id="sign-up">
+          <div class="form-group">
           <input type="text" required placeholder="Enter Email" name="credentials[email]">
           <br>
           <input type="password" required placeholder="Enter Password" name="credentials[password]">
           <br>
           <input type="password" required placeholder="Re-enter Password" name="credentials[password_confirmation]">
           <br>
-          <button type="submit" class="btn btn-light">Sign Up</button>
+          <br>
+          <button type="submit" class="btn btn-outline-dark">Sign Up</button>
+        </div>
         </form>
       <br>
         <h3>Sign In</h3>
         <form id="sign-in">
+          <div class="form-group">
           <input type="text" required placeholder="Enter Email" name="credentials[email]">
           <br>
           <input type="password" required placeholder="Enter Password" name="credentials[password]">
           <br>
-          <button type="submit" class="btn btn-light">Sign In</button>
+          <br>
+          <button type="submit" class="btn btn-outline-dark">Sign In</button>
+        </div>
         </form>
       </section>
 <section id="page-two">
       <div>
         <form id="sign-out">
-          <button type="submit" class="btn btn-light">Sign Out</button>
+          <button type="submit" class="btn btn-outline-dark">Sign Out</button>
         </form>
         <br>
         <form id='question'>
-        <button type='submit' class="btn btn-light">Instant Bliss!</button>
+        <button type='submit' class="btn btn-outline-light">Instant Bliss!</button>
         </form>
       </div>
       <br>
 
         <br>
-        <form id="Create-affirmation" class="btn btn-light">
+        <form id="Create-affirmation" class="btn btn-outline-dark">
           <input type="text" required placeholder="word" name="affirmation[thought]">
           <br>
           <input type="text" required placeholder="context" name="affirmation[context]">
           <br>
           <input type="text" required placeholder="creator" name="affirmation[creator]">
           <br>
-          <button type="submit" class="btn btn-light">Create Affirmation</button>
+          <br>
+          <button type="submit" class="btn btn-outline-light">Create Affirmation</button>
         </form>
         <br>
-
-      <form class="update-affirmation-form, btn btn-light">
+        <br>
+      <form class="update-affirmation-form, btn btn-outline-dark">
         <input type="text" required placeholder="Word" name="affirmation[thought]">
         <br>
         <input type="text" required placeholder="context" name="affirmation[context]">
         <br>
-        <input type="text" placeholder="creator" name="recipe[direction]">
+        <input type="text" placeholder="creator" name="affirmation[creator]">
         <br>
-        <button type='submit' class="upgrade-affirmation, btn btn-light" data-id="{{affirmation._id}}">Update Affirmation</button>
+        <br>
+        <button type='submit' class="upgrade-affirmation, btn btn-outline-light" data-id="{{affirmation._id}}">Update Affirmation</button>
       </form>
+       <br>
         <br>
-       <button class="btn btn-light" id="show-allaffirmation">Show all affirmation</button>
+       <button class="btn btn-outline-light" id="show-allaffirmation">Full array of affirmations</button>
        <div id="content" class="content, col-sm-4" style="background-color:lavender;"></div>
+       <br>
+       <button id="fold-list" class="btn btn-outline-light">Fold List!</button>
       <br>
        <form id="change-password" >
          <h3>Change Password</h3>
@@ -78,7 +90,8 @@
          <br>
          <input required placeholder="New password" type="password" name="password[new]">
          <br>
-         <button id='chpw' class="btn btn-light" type="submit">Change Password</button>
+         <br>
+         <button id='chpw' class="btn btn-outline-light" type="submit">Change Password</button>
        </form>
       </section>
       <br>

@@ -29,6 +29,9 @@ const onUpdateAffirmation = function (event) {
     .then(ui.updateAffirmationSuccess)
     .catch(ui.updateAffirmationFailure)
 }
+const onFoldingList = () => {
+  $('.content').empty()
+}
 
 const onLettingGo = function (event) {
 
@@ -37,5 +40,6 @@ module.exports = {
   onCreateAffirmation,
   onShowAllAffirmation,
   onUpdateAffirmation,
-  onLettingGo
+  onLettingGo,
+  onFoldingList
 }
