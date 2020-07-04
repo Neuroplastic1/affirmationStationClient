@@ -4,7 +4,7 @@ const config = require('./../config')
 const store = require('./../store')
 
 const createAffirmation = function (data) {
-  console.log(event)
+  console.log(data)
   return $.ajax({
     url: config.apiUrl + '/affirmation',
     method: 'POST',

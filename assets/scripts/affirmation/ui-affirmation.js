@@ -3,8 +3,9 @@ const showAffirmationTemplate = require('./../templates/affirmation.handlebars')
 
 const createAffirmationSuccess = (response) => {
   console.log(response)
+  $('#page-two').show()
   $('form').trigger('reset')
-  $('#message').text('now embrace it!')
+  $('#message').text('Embrace!')
   store.affirmation = response.affirmation
   console.log(store.affirmation)
 }

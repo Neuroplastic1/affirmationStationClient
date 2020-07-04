@@ -48,46 +48,46 @@ h3 {
 // .content {
 //   text-align: center;
 // }
-main {
-  @include make-container;
-  @include make-container-max-widths;
-
-  section {
-    @include make-col-ready;
-    @include media-breakpoint-up(md) {
-      @include make-col(6);
-    }
-    @include media-breakpoint-up(lg) {
-      @include make-col(4);
-    }
-    background: $white;
-    border: 1px solid;
-    cursor: pointer;
-    margin: -1px;
-    outline: none;
-    padding: 1rem;
-
-    p {
-      margin-bottom: 0;
-    }
-
-  }
-
-  .content {
-    @include make-row;
-
-    &:empty {
-      &::before {
-        color: lighten($info, 25%);
-        content: '';
-        font-size: 10vh;
-        line-height: .85;
-        text-align: center;
-        width: 100%;
-      }
-    }
-  }
-}
+// main {
+//   @include make-container;
+//   @include make-container-max-widths;
+//
+//   section {
+//     @include make-col-ready;
+//     @include media-breakpoint-up(md) {
+//       @include make-col(6);
+//     }
+//     @include media-breakpoint-up(lg) {
+//       @include make-col(4);
+//     }
+//     background: $white;
+//     border: 1px solid;
+//     cursor: pointer;
+//     margin: -1px;
+//     outline: none;
+//     padding: 1rem;
+//
+//     p {
+//       margin-bottom: 0;
+//     }
+//
+//   }
+//
+//   .content {
+//     @include make-row;
+//
+//     &:empty {
+//       &::before {
+//         color: lighten($info, 25%);
+//         content: '';
+//         font-size: 10vh;
+//         line-height: .85;
+//         text-align: center;
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
 
 
 // nav {

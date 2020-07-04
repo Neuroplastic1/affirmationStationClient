@@ -12,7 +12,7 @@ $(() => {
   $('#sign-in').on('submit', authEvents.onSignIn)
   $('#change-password').on('submit', authEvents.onChangePassword)
   $('#sign-out').on('submit', authEvents.onSignOut)
-  $('.Create-affirmation').on('submit', affirmationEvents.onCreateAffirmation)
+  $('#Create-affirmation').on('submit', affirmationEvents.onCreateAffirmation)
   $('#show-allaffirmation').on('click', affirmationEvents.onShowAllAffirmation)
   $('#page-two').hide()
   // $('#Change-password').hide()
