@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>IntoTheDream!</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <h2>Affirmation Station</h2>
+        <p id='notification'>Welcome Creator!</p>
+        <section id="page-one">
+        <h3>Sign Up</h3>
+        <form id="sign-up">
+          <input type="text" required placeholder="Enter Email" name="credentials[email]">
+          <br>
+          <input type="password" required placeholder="Enter Password" name="credentials[password]">
+          <br>
+          <input type="password" required placeholder="Re-enter Password" name="credentials[password_confirmation]">
+          <br>
+          <button type="submit" class="btn btn-light">Sign Up</button>
+        </form>
+      <br>
+        <h3>Sign In</h3>
+        <form id="sign-in">
+          <input type="text" required placeholder="Enter Email" name="credentials[email]">
+          <br>
+          <input type="password" required placeholder="Enter Password" name="credentials[password]">
+          <br>
+          <button type="submit" class="btn btn-light">Sign In</button>
+        </form>
+      </section>
+<section id="page-two">
+      <div>
+        <form id="sign-out">
+          <button type="submit" class="btn btn-light">Sign Out</button>
+        </form>
+        <br>
+        <form id='question'>
+        <button type='submit' class="btn btn-light">Instant Bliss!</button>
+        </form>
+      </div>
+      <br>
+
+        <br>
+        <form class="Create-affirmation, btn btn-light">
+          <input type="text" required placeholder="word" name="affirmation[thought]">
+          <br>
+          <input type="text" required placeholder="context" name="affirmation[context]">
+          <br>
+          <input type="text" required placeholder="creator" name="affirmation[creator]">
+          <br>
+          <button type="submit" class="btn btn-light">Create Affirmation</button>
+        </form>
+        <br>
+
+      <form class="update-affirmation-form, btn btn-light">
+        <input type="text" required placeholder="Word" name="affirmation[thought]">
+        <br>
+        <input type="text" required placeholder="context" name="affirmation[context]">
+        <br>
+        <input type="text" placeholder="creator" name="recipe[direction]">
+        <br>
+        <button type='submit' class="upgrade-affirmation, btn btn-light" data-id="{{affirmation._id}}">Update Affirmation</button>
+      </form>
+        <br>
+       <button class="btn btn-light" id="show-allaffirmation">Show all affirmation</button>
+       <div id="content" class="content, col-sm-4" style="background-color:lavender;"></div>
+      <br>
+       <form id="change-password" >
+         <h3>Change Password</h3>
+         <input required placeholder="Old Password" type="password" name="password[old]">
+         <br>
+         <input required placeholder="New password" type="password" name="password[new]">
+         <br>
+         <button id='chpw' class="btn btn-light" type="submit">Change Password</button>
+       </form>
+      </section>
+      <br>
+
+    </body>
+</html>

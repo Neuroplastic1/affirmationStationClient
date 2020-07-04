@@ -1,0 +1,104 @@
+@import '~bootstrap/scss/bootstrap';
+h2 {
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+}
+body {
+  background: white;
+  min-height: 100vh;
+  padding: 5rem 0 1rem;
+  text-align: center;
+}
+
+
+h3 {
+  text-align: center;
+}
+#notification {
+  text-align: center;
+}
+#sign-in {
+  text-align: center;
+}
+ #sign-up {
+  text-align: center;
+}
+#change-password {
+  text-align: center;
+}
+#sign-out {
+  text-align: center;
+}
+#message {
+  text-align: center;
+}
+#question {
+  text-align: center;
+}
+#play-game {
+  text-align: center;
+}
+#display-winner {
+  text-align: center;
+}
+#playerturn {
+  text-align: center;
+}
+// .content {
+//   text-align: center;
+// }
+main {
+  @include make-container;
+  @include make-container-max-widths;
+
+  section {
+    @include make-col-ready;
+    @include media-breakpoint-up(md) {
+      @include make-col(6);
+    }
+    @include media-breakpoint-up(lg) {
+      @include make-col(4);
+    }
+    background: $white;
+    border: 1px solid;
+    cursor: pointer;
+    margin: -1px;
+    outline: none;
+    padding: 1rem;
+
+    p {
+      margin-bottom: 0;
+    }
+
+  }
+
+  .content {
+    @include make-row;
+
+    &:empty {
+      &::before {
+        color: lighten($info, 25%);
+        content: '';
+        font-size: 10vh;
+        line-height: .85;
+        text-align: center;
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+// nav {
+//   @extend .navbar;
+//   @extend .navbar-dark;
+//   @extend .bg-dark;
+//   @extend .fixed-top;
+//
+//   .app-name {
+//     @extend .navbar-brand;
+//     @extend .h1;
+//     margin-bottom: 0;
+//   }
+// }

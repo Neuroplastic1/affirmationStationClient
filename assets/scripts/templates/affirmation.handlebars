@@ -1,0 +1,11 @@
+{{#each affirmations as |affirmation|}}
+  {{log affirmation}}
+  <section data-id="{{affirmation._id}}">
+   <div>Affirmaiton:</div>{{affirmation.thought}}
+   <div>Context:</div>{{affirmation.context}}
+   <div>creator:</div>{{affirmation.creator}}
+   <div>id:</div>{{affirmation._id}}
+  </section>
+<!-- <button data-id="{{affirmation._id}}" class="btn btn-danger mr-2">Release !</button> -->
+
+{{/each}}
