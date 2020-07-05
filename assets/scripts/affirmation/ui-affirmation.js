@@ -5,7 +5,7 @@ const affirmationSuccess = (response) => {
   console.log(response)
   $('#page-two').show()
   $('form').trigger('reset')
-  $('#message').text('Embrace!')
+  $('#message').text('Neural path embraced!')
   store.affirmation = response.affirmation
   console.log(store.affirmation)
 }
@@ -28,7 +28,7 @@ const updateAffirmationSuccess = () => {
 }
 const releaseSuccess = (affirmationId) => {
   $(`[data-id='${affirmationId}']`).remove()
-  $('#delete-message').text('Travel has been deleted')
+  $('#message').text('')
 }
 const releaseFailure = (data) => {
   $('#message').text('release error')

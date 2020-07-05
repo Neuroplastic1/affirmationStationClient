@@ -42,7 +42,7 @@ const improveAffirmation = function (data) {
   console.log(data)
   return $.ajax({
     method: 'PATCH',
-    url: config.apiUrl + '/affirmation/' + data.id,
+    url: config.apiUrl + '/affirmation/' + data.affirmation.id,
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },

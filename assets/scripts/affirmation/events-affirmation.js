@@ -21,11 +21,10 @@ const onShowAllAffirmation = function (event) {
 }
 const onUpdateAffirmation = function (event) {
   event.preventDefault()
-  console.log('passed upgraded affirmation')
+  console.log(event)
   const form = event.target
   const data = getFormFields(form)
   console.log(data)
-  // const travelId = $(event.target).data('id')
   api.improveAffirmation(data)
     .then(ui.updateAffirmationSuccess)
     .catch(ui.updateAffirmationFailure)

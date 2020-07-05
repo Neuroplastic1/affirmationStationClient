@@ -16,7 +16,7 @@ $(() => {
   $('#Create-affirmation').on('submit', affirmationEvents.onCreateAffirmation)
   $('#show-allaffirmation').on('click', affirmationEvents.onShowAllAffirmation)
   $('#realeaseAffirmation').on('click', affirmationEvents.onLettingGo)
-  $('#upgrade-affirmation').on('click', affirmationEvents.onUpdateAffirmation)
+  $('#upgrade-affirmation').on('submit', affirmationEvents.onUpdateAffirmation)
   $('.content').on('click', '.remove-affirmation', affirmationEvents.onLettingGo)
   $('#page-two').hide()
   // $('#Change-password').hide()
