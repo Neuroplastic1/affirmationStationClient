@@ -22,7 +22,7 @@ const createAffirmation = function (data) {
 }
 
 const fullArrayOfAffirmations = function (data) {
-  console.log('getAllAffirmation')
+  console.log(store.user._id)
 
   return $.ajax({
     url: config.apiUrl + '/affirmation',
@@ -38,14 +38,21 @@ const fullArrayOfAffirmations = function (data) {
   })
 }
 
-const improveAffirmation = function (data, affirmationId) {
+const improveAffirmation = function (data) {
+  console.log(data)
   return $.ajax({
     method: 'PATCH',
-    url: config.apiUrl + '/affirmation/' + affirmationId,
+    url: config.apiUrl + '/affirmation/' + data.id,
     headers: {
       Authorization: 'Bearer ' + store.user.token
     },
-    data
+    data: {
+      affirmation: {
+        thought: data.affirmation.thought,
+        context: data.affirmation.context,
+        creator: data.affirmation.creator
+      }
+    }
   })
 }
 

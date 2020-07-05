@@ -24,9 +24,9 @@ const userSignInSuccess = function (response) {
   // $('#sign-out').show()
   $('#page-one').hide()
   $('#page-two').show()
-  $('#Change-password').show()
-  $('.Create-affirmation').show()
-  $('.update-affirmation-form').show()
+  // $('#Change-password').show()
+  // $('.Create-affirmation').show()
+  // $('.update-affirmation-form').show()
 
   // $('#showOnRrecip').show()
   $('#notification').hide()

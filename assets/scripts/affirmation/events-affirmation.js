@@ -9,8 +9,8 @@ const onCreateAffirmation = function (event) {
   const form = event.target
   const data = getFormFields(form)
   api.createAffirmation(data)
-    .then(ui.createAffirmationSuccess)
-    .catch(ui.createAffirmationFailure)
+    .then(ui.affirmationSuccess)
+    .catch(ui.createFailure)
 }
 const onShowAllAffirmation = function (event) {
   event.preventDefault()
@@ -24,7 +24,8 @@ const onUpdateAffirmation = function (event) {
   console.log('passed upgraded affirmation')
   const form = event.target
   const data = getFormFields(form)
-
+  console.log(data)
+  // const travelId = $(event.target).data('id')
   api.improveAffirmation(data)
     .then(ui.updateAffirmationSuccess)
     .catch(ui.updateAffirmationFailure)
@@ -34,7 +35,12 @@ const onFoldingList = () => {
 }
 
 const onLettingGo = function (event) {
-
+  event.preventDefault()
+  const affirmationId = $(event.target).data('id')
+  console.log(event)
+  api.deleteAffirmation(affirmationId)
+    .then(() => ui.releaseSuccess(affirmationId))
+    .catch(ui.releasefailure)
 }
 module.exports = {
   onCreateAffirmation,
