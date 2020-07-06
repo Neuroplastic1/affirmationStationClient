@@ -43,7 +43,7 @@ const onLettingGo = function (event) {
   console.log(event)
   api.deleteAffirmation(affirmationId)
     .then(() => ui.releaseSuccess(affirmationId))
-    .catch(ui.releasefailure)
+    .catch(ui.releaseFailure)
 }
 module.exports = {
   onCreateAffirmation,

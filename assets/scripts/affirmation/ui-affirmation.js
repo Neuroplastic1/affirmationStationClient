@@ -25,14 +25,17 @@ const showAllAffirmationFailure = (data) => {
 }
 
 const updateAffirmationSuccess = () => {
-  $('#message').text('')
+  $('#message').text('Updated Affirmation Embraced!')
+}
+const updateAffirmationFailure = () => {
+  $('#message').text('Contant belongs to different User')
 }
 const releaseSuccess = (affirmationId) => {
   $(`[data-id='${affirmationId}']`).remove()
   $('#message').text('')
 }
 const releaseFailure = (data) => {
-  $('#message').text('release error')
+  $('#message').text('Contant belongs to different User')
 }
 module.exports = {
   affirmationSuccess,
@@ -40,6 +43,7 @@ module.exports = {
   showAllAffirmationSuccess,
   showAllAffirmationFailure,
   updateAffirmationSuccess,
+  updateAffirmationFailure,
   releaseSuccess,
   releaseFailure
 }

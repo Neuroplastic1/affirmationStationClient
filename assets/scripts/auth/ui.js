@@ -6,7 +6,7 @@ const store = require('./../store.js')
 
 const userCreateSuccess = function (response) {
   $('form').trigger('reset')
-  $('#message').text('wemcome' + response.user.email + '')
+  $('#message').text('Signed up successfully for ' + response.user.email + '')
   $('#message').show().removeClass().addClass('success')
 }
 const userCreateFailure = function () {
@@ -17,7 +17,7 @@ const userCreateFailure = function () {
 
 const userSignInSuccess = function (response) {
   console.log(response)
-  $('#message').text('Signed in! Welcome back ' + response.user.email + '!' + '')
+  $('#message').text('Welcome back ' + response.user.email + '!')
   $('#message').show().removeClass().addClass('success')
   //  $('#Sign-up').hide()
   // $('#Sign-in').hide()
