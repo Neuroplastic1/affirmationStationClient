@@ -1,11 +1,13 @@
 {{#each affirmations as |affirmation|}}
   {{log affirmation}}
   <section class="text-center" data-id="{{affirmation._id}}">
-   <div>Affirmaiton:</div>{{affirmation.thought}}
-   <div>Context:</div>{{affirmation.context}}
-   <div>creator:</div>{{affirmation.creator}}
-   <div>id:</div>{{affirmation._id}}
+    <br>
+   <div><h3>{{affirmation.thought}}</h3></div>
+   <div><h5>Context:{{affirmation.context}}</h5></div>
+   <div>Creator:{{affirmation.creator}}</div>
+   <div><h7>id:{{affirmation._id}}</h7></div>
   </section>
-<button data-id="{{affirmation._id}}" class="remove-affirmation btn btn-outline-light mr-2" id="realeaseAffirmation">Let go</button>
+  <br>
+<button data-id="{{affirmation._id}}" class="remove-affirmation btn btn-outline-light .btn-sm " id="realeaseAffirmation">Release</button>
 
 {{/each}}

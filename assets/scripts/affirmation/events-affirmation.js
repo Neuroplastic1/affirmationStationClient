@@ -31,8 +31,12 @@ const onUpdateAffirmation = function (event) {
 }
 const onFoldingList = () => {
   $('.content').empty()
+  $('#message').text('Well done!')
 }
-
+const instantBliss = function () {
+  event.preventDefault()
+  $('#question2').text('You are free, to BE:)')
+}
 const onLettingGo = function (event) {
   event.preventDefault()
   const affirmationId = $(event.target).data('id')
@@ -46,5 +50,6 @@ module.exports = {
   onShowAllAffirmation,
   onUpdateAffirmation,
   onLettingGo,
-  onFoldingList
+  onFoldingList,
+  instantBliss
 }

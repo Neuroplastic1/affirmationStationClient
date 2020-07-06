@@ -19,6 +19,7 @@ $(() => {
   $('#upgrade-affirmation').on('submit', affirmationEvents.onUpdateAffirmation)
   $('.content').on('click', '.remove-affirmation', affirmationEvents.onLettingGo)
   $('#page-two').hide()
+  $('#question').on('submit', affirmationEvents.instantBliss)
   // $('#Change-password').hide()
   // $('#sign-out').hide()
   // $('#showOneAffirmation').hide()

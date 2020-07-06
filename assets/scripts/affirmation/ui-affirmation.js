@@ -17,6 +17,7 @@ const showAllAffirmationSuccess = (data) => {
   console.log('affirmationShowAllSuccess')
   const showAffirmationHtml = showAffirmationTemplate({affirmations: data.affirmation})
   $('#content').html(showAffirmationHtml)
+  $('#message').text('Ready to Embrace!')
   // $('#page-two').show()
 }
 const showAllAffirmationFailure = (data) => {
