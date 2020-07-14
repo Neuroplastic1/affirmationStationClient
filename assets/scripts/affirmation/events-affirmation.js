@@ -14,14 +14,14 @@ const onCreateAffirmation = function (event) {
 }
 const onShowAllAffirmation = function (event) {
   event.preventDefault()
-  console.log('onShowAllRecipes')
+  // console.log('onShowAllRecipes')
   api.fullArrayOfAffirmations()
     .then(ui.showAllAffirmationSuccess)
     .catch(ui.showAllAffirmationFailure)
 }
 const onUpdateAffirmation = function (event) {
   event.preventDefault()
-  console.log(event)
+  // console.log(event)
   const form = event.target
   const data = getFormFields(form)
   console.log(data)
@@ -40,7 +40,7 @@ const instantBliss = function () {
 const onLettingGo = function (event) {
   event.preventDefault()
   const affirmationId = $(event.target).data('id')
-  console.log(event)
+  // console.log(event)
   api.deleteAffirmation(affirmationId)
     .then(() => ui.releaseSuccess(affirmationId))
     .catch(ui.releaseFailure)

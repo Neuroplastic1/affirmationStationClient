@@ -7,7 +7,7 @@ const affirmationSuccess = (response) => {
   $('form').trigger('reset')
   $('#message').text('Neural path embraced!')
   store.affirmation = response.affirmation
-  console.log(store.affirmation)
+  // console.log(store.affirmation)
 }
 const createFailure = (response) => {
   $('#message').text('stay focused & steady')
