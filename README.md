@@ -16,7 +16,12 @@ As a user in this application, I want to be able to sign-up and then sign-in. Af
 Before user is signed in give access to sign up form and sign in form.
 
 
-"Affirmation Station" Wireframe
+"Affirmation Station" 
+
+##Wireframe
+
+![IMG_0888](https://user-images.githubusercontent.com/64027495/87384328-70a01a00-c569-11ea-851d-66b111038a18.JPG)
+
 
 After user is Signed-in, allow user to access change password form, sign out button, play game button (when clicked, displays the square for them to play), game stats button (when click, displays the number of games they’ve played).
 
