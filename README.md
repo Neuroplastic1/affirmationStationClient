@@ -18,7 +18,6 @@ Before user is signed in give access to sign up form and sign in form.
 
 "Affirmation Station" 
 
-## Wireframe
 
 ![IMG_0888](https://user-images.githubusercontent.com/64027495/87384328-70a01a00-c569-11ea-851d-66b111038a18.JPG)
 
