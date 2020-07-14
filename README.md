@@ -19,4 +19,4 @@ After user is Signed-in, allow user to access change password form, sign out but
 "Affirmation Station" Wireframe
 
 Unresolved actions
-my sigh out button does not take me to first page.
+Want to work more on UI flow
