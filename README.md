@@ -2,11 +2,14 @@
 
 # Affirmation Station
 integrate everyday inspiations into life enriching affirmations. 
-## Links
-Client-side deployed: (https://neuroplastic1.github.io/affirmationStationClient/)
 
-Server-side deployed: (https://github.com/Neuroplastic1/affirmationStationServer)
-Server-side repository: (https://github.com/Neuroplastic1/affirmationStationServer)
+## Links
+[Client-side deployed:] (https://neuroplastic1.github.io/affirmationStationClient/)
+
+[Server-side deployed:] (https://github.com/Neuroplastic1/affirmationStationServer)
+
+[Server-side repository:] (https://github.com/Neuroplastic1/affirmationStationServer)
+
 ## Technologies Used
 JavaScript, HTML, jQuery, Bootstrap, Flexbox, CSS, cURL, handlebar.
 
