@@ -4,7 +4,7 @@ const config = require('./../config')
 const store = require('./../store')
 
 const createAffirmation = function (data) {
-  console.log(data)
+
   return $.ajax({
     url: config.apiUrl + '/affirmation',
     method: 'POST',
@@ -22,7 +22,7 @@ const createAffirmation = function (data) {
 }
 
 const fullArrayOfAffirmations = function (data) {
-  console.log(store.user._id)
+  // console.log(store.user._id)
 
   return $.ajax({
     url: config.apiUrl + '/affirmation',
@@ -39,7 +39,7 @@ const fullArrayOfAffirmations = function (data) {
 }
 
 const improveAffirmation = function (data) {
-  console.log(data)
+  // console.log(data)
   return $.ajax({
     method: 'PATCH',
     url: config.apiUrl + '/affirmation/' + data.affirmation.id,
