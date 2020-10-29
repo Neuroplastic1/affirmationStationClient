@@ -1,4 +1,3 @@
-[![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
 # Affirmation Station
 Capture and Integrate everyday inspiations into life enriching affirmations. 
@@ -34,6 +33,7 @@ After user is Signed-in, allow user to access change password form, sign out but
 
 I aproached creating this app by making an approximate time plan of the process. I first set up my server side schema and routes and then focused on Client side. On client side I first added all athentication forms and affirmation create & update froms to html, I used Jquery and handlebars for event handling and ui flow and used ajax for handling api requests and responses from server side. in the end i sued css to add background image and aligning the forms and data resources.
 
-## Unresolve issues
 
-Because of importing the background image through external link, each page takes quiet long time to load. in the future I would like to add an image 
+A big shout out to GA community for constant support through this project!
+
+## [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
