@@ -32,7 +32,7 @@ All data is saved in mongoDB
 
 ## Planning and Building process 
 
-I aproached creating this app by making an approximate time plan of the process. I first set up my server side schema and routes and then focused on Client side. On client side I first added all athentication forms and affirmation create & update froms to html, I used Jquery and handlebars for event handling and ui flow and used ajax for handling api requests and responses from server side. in the end i sued css to add background image and aligning the forms and data resources.
+I aproached creating this app by making an approximate time plan of the process. I first set up my server side schema and routes and then focused on Client side. On client side I first added all athentication forms and affirmation create & update froms to html, I used Jquery and handlebars for event handling and ui flow and used ajax for handling api requests and responses from server side. in the end I used css to add background image and aligning the forms and UI.
 
 
 A big shout out to GA community for constant support through this project!
